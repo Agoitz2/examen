@@ -18,25 +18,29 @@ class TablaPilotosSeeder extends Seeder
     {
         DB::table('Pilotos')->insert([
             'nombre' => 'Mary Roe',
-            'fecha_nacimiento' => current_date(),
+            'fecha_nacimiento' => '2022-11-16',//current_date(),
+            'numero_licencia' => 1,
             'victorias' => 1,
             'escuderia_id' => 1,
         ]);
         DB::table('Pilotos')->insert([
             'nombre' => 'Angie Lopez',
-            'fecha_nacimiento' => date(),
+            'fecha_nacimiento' => '2022-11-16',
+            'numero_licencia' => 1,
             'victorias' => 0,
             'escuderia_id' => 1,
         ]);
         DB::table('Pilotos')->insert([
             'nombre' => 'Agoitz Ezkerra',
-            'fecha_nacimiento' => date(),
+            'fecha_nacimiento' => '2022-11-16',
+            'numero_licencia' => 1,
             'victorias' => 20,
             'escuderia_id' => 2,
         ]);
         DB::table('Pilotos')->insert([
             'nombre' => 'Rigoberto Noseqmas',
-            'fecha_nacimiento' => date(),
+            'fecha_nacimiento' => '2022-11-16',
+            'numero_licencia' => 1,
             'victorias' => 2,
             'escuderia_id' => 3,
         ]);
