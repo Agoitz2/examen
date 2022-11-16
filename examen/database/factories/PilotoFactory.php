@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Models\Escuderia;
+use App\Models\Escuderia;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Piloto>
@@ -20,8 +20,8 @@ class PilotoFactory extends Factory
         return [
             'nombre' => fake()->name(),
             'fecha_nacimiento' => now(),
-            'numero_licencia' => fake()->int(11),
-            'victorias' => fake()->integer(),
+            'numero_licencia' => fake()->buildingNumber(),
+            'victorias' => fake()->buildingNumber(),
             'escuderia_id' => Escuderia::all()->random()->id,
         ];
     }

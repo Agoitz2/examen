@@ -19,7 +19,7 @@ class EscuderiaFactory extends Factory
         return [
             'nombre' => fake()->name(),
             'fecha_creacion' => now(),
-            'num_pilotos' => fake()->int(11),
+            'num_pilotos' => fake()->buildingNumber(),
             'sobre_presupuesto' => fake()->tinyint(),
         ];
     }
